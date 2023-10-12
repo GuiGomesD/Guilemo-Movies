@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagens/logo.png" type="image/x-icon">
+    <script src="inicio.js"></script>
+    <title>Guilemo</title>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="first_part">
+      <div class="logo">
+        <h1>Guilemo</h1>
+      </div>
+      <span class="navegation">
+         <a href="#">Lançamentos</a>
+        <a href="#">Populares</a>
+        <a href="#">Em Alta</a>
+        <a href="#">Séries</a>
+      </span>
+    </div>
+
+    <div class="second_part">
+      <input type="search" name="pesq" id="pesq" placeholder="Pesquisar filmes">
+      <a href="#"><img class="lupapesq" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEUAAAD///+6urphYWFFRUX29vb8/Pzq6urc3NzExMR3d3ezs7PS0tK3t7e9vb3j4+PKysqFhYVvb2+NjY2goKCVlZWoqKju7u4uLi7W1tahoaFaWlp+fn7k5OQ9PT0aGhpSUlIyMjImJiZnZ2dISEgPDw8/Pz8gICAXFxc3NzeSkpJVVVULCwtI+nDWAAAJ8ElEQVR4nO1dW1fySgzFD1oKVC5VCgoignf9/7/voCwVFXYuk7ngOvuFp7azmZkkk2SSRsMnHu9W09WsucFisbr2+qmgeFiuR5ed8mLQzrKTL+STouyPq+Uq9viccNM9H7Z3ae1B1h6O13exR6pBazzMMbddtHvd2AMW4X4kYfeB4nIZe+A8LC8HcnafU9mMPXwK08u2mt4WWd2KTQJgVDjS22Iwik1kP1o9xd47gLyX3kQ2SzN6WwzT2pGVzfL8jmIWm9YnKlfpcpBjGvO4vvDE7w3lbWx6jaehR35vOH2MS7D2zG+D/Cwiv4qwqo0wWEbit+oE4feGXhSCXTsFT6MdXuJc+5YwP3EZmGAzzA7cRRHUG3AenN8GWRWM36u1DcpFqJV6G36FfqAMQrAbjd8GV0/+CY5jEtxsxqVvgqdxCW6w9kswtBbcB58+jmhC9Ds8muIWJ/mymExc33Hui+CVdkTZpFOP583F9Otdi/W4LjOtaeuJomoGJxeX3cN+s2l1Xqhm1AtFhbOiHC/pmMv1rFb8dx7EjVjIDLuv7JevxuJIgLmR+k/2/Yu59AOLWmgMGvvhRIeJrNadV+ei1ZqbHornEn5neu+YyHM+4e8CEi8Cfo6RzluBQCts2G1wzVZb2dj9a2u+0DFzULG3R23jvR2xZY6RzugxP1eYRcQe+1yKJp9knnhtXdNcT1fb4FtT3iYsbgy+tQvmNP5z/xJPtnmwE0c8is4HYpbTIvcSy1ywbPLswe0r95yPDBw/chAs/d9x+wZHUTh+AoElxp1scM5eqK3o7MMZYwCZw/sfGe/3HL/kWMQOpg0jQOg9uYejjtV6f5YAwUajokdxoX03LWaCpGcxKCqFDS1mDE4SNgNRGm+kwg0WXaczPlTyjhTUQ2sih0GKPJXGoCxuC7OeDdIZrZhEagrzKf0OO6yo/1sxidQBLVxQ/R2kQBVPIiW/gufwUCaqeNMQCZUDHyQwKAeV0MlHLYoA4fSfoA5yQt8icTILpOq/45KgKLJOp/hdV75IYBA7py95F7GtX3xxwGgSkyh5F9Y+oj/LEoRpI1AYhJyJdqHuBo9LIGtwTknoPMgdECY4W9ZgEyn3SYHAK2bI9tpi34i3VA8O8CSy7RC4SLOoF3iJGAPTEFlBo9ur85AGzqtjWiJQkubWERghbiFDpksKRn08Orh5wJEi3jugfyb6fTLsP2WdWqFNGtR1sR9Q1rCOrc/oDVEOFd8BbWbWDEDjL7KcecMSjY9lUSJdYZfB4gB4iGKc9G/Q8wksUmKZMtQ1NNni3+hsEMdExipDvoIEJOkG10idTejnUcDp1P/wOYBOJHqZoT8okfojUJ+ROv8JKNTYNukH4EYkhSF62iUlwBTIrCENZyRKo1vdH0CRKPJ4gURp1NP9LtAhkZT36HyfRg2HBpGKRiVooeOXYV61G2BWNuXJQBGeIKPnAGYyLfGzd0AdRopW7ANiSCjEB/BowMwECsgsIXz76IBvkI5rBSQtiNMFCkNG9iPuAp3SCUcGYhizisoPIHcgERlDRlvg7AsEpPIdGHq+RC0BOub/DYYonYkQ+YhhQkXiEEOissT/DBOBp1WazNECHy7+hqRx0BYoef1I9CFhXP4Bm4aw2p7AownZpcgTQfhaVuDRRPzBb0Bua+KGBLrUnIyrDcfHKJEPzpZJhNa2AARJtY3mP8jgOUB76YTKsEdRjyCj52ANBjmhqqkgObwMMHgWkElD7iX0cBIR4DcghU8WrUMJUcmoCxTJJ7U2ynRgxFeD4A7FnsgY5wNQNbmvO9tCwPghnbSFVkAitjeKAU/o5FDkikzEMkX+YEboAQnTCHeB9gBtJE5iG9KmJwv/46cBtyHjZjJMFhdX8PIBmBPFSaZAokZ9LdwSaICsZAr4FyXQhwrmQbOMEpjmnUB/FHghgbeN0BsSkKbwJgHvFTBXPLpbGMp6ppyANxmjW9/wugvz9APTjONemcHOQP4Kg2nGz14JkIByhi0loL6Ie4S6hnKGnZaGb6NGtWtgaqlADMJbM1EnEU6hwN2Jb/lFjF/g6nECcwRf7o+YSItvH0rehCs0RDsI47Ulytki6n7c+6KA0bIcFV4OYRpp/AIuZSE82RFFFaJcSyAqtwnHRCyIKCEMvK7E93mIRhYR1ikxIrEOo+rtBVeKhPBTqDCq4F7ga2z3RCksxT9OTWJg442oTaOyQqhJDLoVqf42qk1D1bsJadpQjQuU7iOyim8waUPWML3SlcejdGIwxU+uJvVQ6O5VQSosMArFnijrAsFY6zv8FPL+Dm6fN5UXkK7E7J8iv5Gd6sYLo5y357iwpFOfhiKu0LCFV88Ubw9+QLNQOR2NPV4tlfZa1Mwip6m4t6RFebtTBUVaKW7Q9nONXdOKULFQWf+ja4egfbjV9aRXUOS18DC/nMjpGWA0Elzc7BMTU804VfSx01NkVH1/h2En+2ennt/yhcoVaZlRlH8mbqTnTJEt1AYGS3Vq0M1VvlD5/TnLpRu/J2EbQiuKT4LehKXD/aglu1kXBfFC5RionxgoTdXKshmveBZhkscv5D1x8GYq7WFpTpHZQusTg3OBR7U1tmg1/APihSo3Mq56Fd1KtnFX1a7a4QDEFOWW/ma5FvUcZOBMR/XASbljiBeqhuI7in7dnS1uHrZc765XN63mqNfxNHU7EFNktZk7jCxrD66uBhN1s2o5xAtVKm7iQzyLXCs8HYgpzoy1ln+IKd47d7cPDfFefPWgnP1CftLgts9NBnKK83Di3gbyI/FC5weLB0WdMpuDajgovNbrI1MbihZcD4wenilBcyyvjmoac9XFu6PSG7qaEC0H33RwKN251fEoDnX69sjfdhwaeId3oC+ZcOaH48ULN/LFhEsO/pn9Wi23hWYsfahuKU5d2yNHf/nxYku161hk9t7MksvOd6s3GBqIufPNu5HBROadn4EPQ4oGVfUcvdd5Od9TfINOsOPCJmP0aayUDvmwOpBFaTaLdtWe1z2pcC1qdLfOiqLpna1Vty5YXqus3XkmY8dWC9WS4Tta1XPn4uB0Toqyns94+b1GFM0ZbvFws6zO6l6/3++U5XDz0zs9687uV4zI1BdsFqonhjYwoRibBIbFQo3NgYABxdgUKLgv1NgMSDhTjE2AhuNCTaPrGIbbLCZUg/UwnCgm0+4IwmWhJtH8j4aeYiqVH0moF2pCjWQIaCm+xB44H7qFmlCtZxqqWUykfyMTCopHNYUNDcUj2oVbSPeiIgocG7JZnCTT+k8AEcXo1QJVECzU45KjX2DHFxMo2qkEMzJ1vAR593hTKdOtBJ1kNzlOIfOFBRHtOkI9+AtzkEdQHMmhl8L4AMfiWJXEHnSHv/bj5N/RWaIYj816+DmV7c7+e1f/AXKzj1AX8h5lAAAAAElFTkSuQmCC" alt=""></a>
+      <div class="pesq_login">
+        <img class="lupa" onclick="pesqopen()" src="data:image/png;base64,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" alt="">
+        <div class="toggle">
+          <label class="switch switch200">
+            <input type="checkbox" onclick="toggle()">
+            <span class="slider slider200"></span>
+          </label>
+        </div>
+        <div class="login">
+          <a href="/login/login.html">Login</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="recommend">
+        <div class="texto">
+          <h1>Assista seus Filmes e Séries Favoritas</h1>
+        </div>
+    </div>
+
+    <div class="player"></div>
+
+    <section class="filmes">
+      <section class="boxes" class="box-1" style="margin-top: 20px;">
+        <a href="/filmes/1.Homem-Formiga Quantumania/">
+          <div class="movie" id="movie1"><img src="https://cdn.marvel.com/content/1x/antmanandthewaspquantumania_lob_crd_03.jpg" alt="Homem-Formiga Quantumania"></div>
+        </a>
+        <a href="/filmes/2.Doutor Estranho/">
+          <div class="movie" id="movie2"><img src="https://superheronews.com/wp-content/uploads/2016/09/doctor-strange-poster-benedict-cumberbatch-382x566.jpg" alt="Doutor Estranho"></div>
+        </a>
+        <a href="/filmes/3.Capitao America Guerra Civil/">
+          <div class="movie" id="movie3"><img src="https://superheronews.com/wp-content/uploads/2016/03/Civil-War-Poster-382x566.jpg" alt="Capitão América Guerra Civil"></div>
+        </a>
+        <a href="/filmes/4.Homem-Aranha Sem Volta para Casa/">
+          <div class="movie" id="movie4"><img src= "https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg" alt="Homem-Aranha Sem Volta para Casa"></div>
+        </a>
+        <a href="/filmes/5.Shang-Chi e a Lenda dos Dez Anéis/">
+          <div class="movie" id="movie5"><img src="https://noguiltdisney.com/wp-content/uploads/2021/08/shang-chi-movie-poster.jpg.webp" alt="Shang-Chi e a Lenda dos Dez Anéis"></div>
+        </a>
+        <a href="/filmes/6.What if/inicio/index.html">
+          <div class="movie" id="movie6"><img src="https://t.ctcdn.com.br/MJ_U-G4ESLfnCFS5opTlBkgy3R4=/1024x0/smart/i493481.jpeg" alt="What if?"></div>
+        </a>
+        <div class="movie" id="movie7"><img src="https://cdn.marvel.com/content/1x/marvels_loki_cover.jpg" alt=""></div>
+      </section>
+      <section class="boxes" class="box-2">
+        <div class="movie" id="movie1"><img src="https://pbs.twimg.com/media/EjQUBNXU8AAXqvT.jpg" alt=""></div>
+        <div class="movie" id="movie2"><img src="https://br.web.img2.acsta.net/pictures/22/09/23/20/14/0505071.jpg" alt=""></div>
+        <div class="movie" id="movie3"><img src="https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg" alt=""></div>
+        <div class="movie" id="movie4"><img src= "https://br.web.img2.acsta.net/pictures/19/07/10/20/01/2331295.jpg" alt=""></div>
+        <div class="movie" id="movie5"><img src="https://flxt.tmsimg.com/assets/p11094767_b_v10_ac.jpg" alt=""></div>
+        <div class="movie" id="movie6"><img src="https://br.web.img3.acsta.net/pictures/22/11/30/19/53/5856320.jpg" alt=""></div>
+        <div class="movie" id="movie7"><img src="https://themoviesandseriestribe.files.wordpress.com/2016/10/the-flash.jpg" alt=""></div>
+      </section>
+      <section class="boxes" class="box-3">
+        <div class="movie" id="movie1"><img src="https://br.web.img3.acsta.net/pictures/17/12/07/11/33/0502209.jpg" alt=""></div>
+        <div class="movie" id="movie2"><img src="https://lumiere-a.akamaihd.net/v1/images/image_2ff75a5c.jpeg?region=0%2C0%2C540%2C810" alt=""></div>
+        <div class="movie" id="movie3"><img src="https://cinecriticas.com.br/wp-content/uploads/2023/03/Cine1-2.jpg" alt=""></div>
+        <div class="movie" id="movie4"><img src= "https://riomarfortalezaonline.com.br/fortalezashopping/2022/12/15b4bfa5-b80d-4a42-97e2-a01da71c1366-2022-11-23-151232-scaled.jpg" alt=""></div>
+        <div class="movie" id="movie5"><img src="https://media.fstatic.com/7eJ6JdHU9naxuz6bsDpIZt_nntQ=/322x478/smart/filters:format(webp)/media/movies/covers/2019/03/IMG_2133.JPG" alt=""></div>
+        <div class="movie" id="movie6"><img src="https://br.web.img3.acsta.net/medias/nmedia/18/92/03/73/20176438.jpg" alt=""></div>
+        <div class="movie" id="movie7"><img src="https://www.themoviedb.org/t/p/w500/bPRvFj9MGeLeqidaTniUf8yQ0PW.jpg" alt=""></div>
+      </section>
+      <section class="boxes" class="box-4">
+        <div class="movie" id="movie1"><img src="https://imgartists.com/wp-content/uploads/2016/06/back-to-the-future-poster-large2-500x760-1.jpg" alt=""></div>
+        <div class="movie" id="movie2"><img src="https://upload.wikimedia.org/wikipedia/pt/3/3a/Interstellar_Filme.png" alt=""></div>
+        <div class="movie" id="movie3"><img src="https://seuladogeek.com.br/wp-content/uploads/2022/03/O-Projeto-Adam-filme-Netflix.jpg" alt=""></div>
+        <div class="movie" id="movie4"><img src= "https://musicart.xboxlive.com/7/94fc5000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt=""></div>
+        <div class="movie" id="movie5"><img src="https://piratefilmeshd.net/wp-content/uploads/2023/04/Baixar-Filme-e-Serie-Torrents-25.jpg" alt=""></div>
+        <div class="movie" id="movie6"><img src="https://upload.wikimedia.org/wikipedia/pt/c/c0/ForrestGumpPoster.jpg" alt=""></div>
+        <div class="movie" id="movie7"><img src="https://www.themoviedb.org/t/p/w500/jXlGeLOg2RKHmV9CinVaIB4ijKU.jpg" alt=""></div>
+      </section>
+      <section class="boxes" class="box-5">
+        <div class="movie" id="movie1"><img src="https://media.fstatic.com/k5xISHP7KRi-j8s4Rb2ANVHSjp4=/322x478/smart/filters:format(webp)/media/movies/covers/2018/02/27912651_1800962603536933_8119531632386863934_o.jpg" alt=""></div>
+        <div class="movie" id="movie2"><img src="https://media.harrypotterfanzone.com/philosophers-stone-20-years-of-movie-magic-harry-poster.jpg" alt=""></div>
+        <div class="movie" id="movie3"><img src="https://leiturafilmica.com.br/wp-content/uploads/2013/03/o-espetacular-homem-aranha-poster.jpg" alt=""></div>
+        <div class="movie" id="movie4"><img src= "https://media.wired.com/photos/5955b77cad90646d424bb475/master/w_2560%2Cc_limit/IMG_39111.jpeg" alt=""></div>
+        <div class="movie" id="movie5"><img src="https://br.web.img3.acsta.net/pictures/14/12/02/22/15/327211.jpg" alt=""></div>
+        <div class="movie" id="movie6"><img src="https://cdn.mos.cms.futurecdn.net/p7LYq5FN4SAHk7sYp6zZog.jpg" alt=""></div>
+        <div class="movie" id="movie7"><img src="https://br.web.img3.acsta.net/pictures/16/11/21/15/29/457312.jpg" alt=""></div>
+      </section>
+    </section>
+  </main>
+  
+  <footer class="rodape">
+    
+  </footer>
+</body>
+</html>

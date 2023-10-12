@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+
+body {
+   background-color: #020203;
+   margin:0 ;
+   font-family: arial;
+}
+
+ .cabecalho {
+   display: flex;
+   background-color:#020203;
+   align-items: center;
+   width: 100%;
+   padding-bottom: 15px;
+}
+
+.first_part {
+   
+   display: flex;
+   width: 500px;
+   align-items: center;
+   margin-left: 10%;
+}
+
+.logo h1 {
+   display: inline-block;
+   color: #01eaa8;
+   font-size: 30px;
+   font-family: 'Gothic A1', sans-serif;
+   margin-left: 4%;
+}
+
+.navegation {
+   display: flex;
+   min-width: 395px;
+   margin-left: 2%;
+
+}
+
+.navegation > a {
+   color: rgb(163, 163, 163);
+   text-decoration: none;
+   font-family: 'Gothic A1', sans-serif;
+   font-weight:lighter;
+   font-size: 17px;
+   margin-left: 15px;
+}
+
+.navegation > a:hover {
+   color: white;
+   
+}
+
+.second_part {
+   display: flex;
+   width: 70%;
+}
+
+.lupa {
+   width: 29px !important;
+   height: 29px !important;
+   visibility: hidden;
+}
+
+.lupapesq {
+   margin-left: -30px;
+   width: 20px;
+   height: 20px;
+}
+
+.second_part img:hover {
+   transform: scale(1.1);
+}
+
+.login {
+   margin-top: 5px;
+   margin-left: 5%;
+}
+
+.pesq_login {
+   display: flex;
+}
+
+.boxes {
+   margin: 0px 20px;
+   text-align: center;
+   border-radius: 10px;
+}
+
+.boxes:hover {
+   background-color: rgba(28, 28, 28, 0.626);
+   transition: 0.1s;
+   
+}
+
+.movie {
+   display: inline-block;
+   padding: 0px 5px;
+}
+
+.movie img {
+   margin:49px 0px;
+   width: 222px;
+   height: 320px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+.movie:hover {
+   filter: brightness(50%);
+   transition: 0.5s;
+}
+
+#pesq{
+   width: 60%;
+   height: 35px;
+   border: none;
+   background: none;
+   border-bottom: 1px solid;
+   border-color: #a4a2a2c2;
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+}
+
+#pesq:focus {
+   outline: none;
+}
+
+
+.recommend {
+   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.527) 70%,rgba(0, 0, 0, 5000)) , url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/dex863c-aea23b77-ac0c-4a14-91aa-f1156e85ee44.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyOThiYWMwLWI4YmYtNGM4MC1hZjY3LTcyNWMxMjcyZGJiMFwvZGV4ODYzYy1hZWEyM2I3Ny1hYzBjLTRhMTQtOTFhYS1mMTE1NmU4NWVlNDQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.a_fb6MT8HU5lA_gYEKzmM5_JvxmJQz01bJk8PTZekgc");
+   text-align: center;
+   padding: 6%;
+}
+
+.texto {
+   display: inline-block;
+   max-height: 184px;
+}
+
+.texto h1 {
+   display: inline-block;
+   color: white;
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 40px;
+}
+
+.light-mode {
+   transition: 1s;
+   background-color: white;
+   
+}
+
+.light-mode-boxes > section:hover{
+   background-color: rgb(202, 202, 202);
+   
+}
+
+/* Toggle Início */
+
+.toggle {
+   margin-top: -19px;
+}
+
+.switch input
+{
+  display: none;
+}
+
+.switch 
+{
+  display: inline-block;
+  width: 60px; /*=w*/
+  height: 30px; /*=h*/
+  margin: 4px;
+  transform: translateY(50%);
+  position: relative;
+}
+
+.slider
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  border-radius: 30px;
+  transform: translateX(-30px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px); /*translateX(w-h)*/
+}
+
+.switch200 .slider:before
+{
+  width: 200%;
+  transform: translateX(-82px); /*translateX(-(w-h))*/
+}
+
+.switch200 input:checked + .slider:before
+{
+  background-color: #ffffff;
+}
+
+.switch200 input:checked + .slider
+{
+  box-shadow: 0 0 0 2px #ffff, 0 0 8px #ffff;
+}
+
+/* Toggle Fim */
+
+
+.login a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+a {
+   color: rgba(15, 15, 15, 0);   
+}
+
+.rodape {
+   background-color: #181818;
+   height: 500px;
+}
+
+/* Responsividade Início */
+
+@media only screen and (max-width: 1718px) {
+
+   .boxes {
+      margin: 0px;
+   }
+ }
+
+@media (max-width: 1708px) { .movie img {
+   width: 190px !important;
+   height: 273px !important;
+}}
+
+@media (max-width: 1484px) {.movie img {
+   width: 160px !important;
+   height: 243px !important;
+}  } 
+
+@media (max-width: 1274px) { .movie img {
+   width: 130px !important;
+   height: 213px !important;
+} }
+
+@media (max-width: 1064px) {  #movie7 { display: none;  } }
+
+@media (max-width: 990px) {
+   
+   .pesq_login {
+      float: left;
+   }
+
+   #pesq {
+      display: none;
+   }
+   .lupapesq {
+      display: none;
+   }
+   
+   .lupa {
+      width: 25px !important;
+      height: 25px !important;
+      visibility: visible !important;
+      margin-right: 10px;
+   }
+
+   .cabecalho {
+      display: flex;
+      justify-content: space-between;
+   }
+ }
+
+@media (max-width: 920px) {   #movie6 { display: none;  }}
+
+@media (max-width: 775px) { 
+   #movie5 { display: none;  }
+   
+   .navegation {
+    display: none !important;
+   }
+ 
+ }
+
+@media only screen and (max-width: 687px) {
+   
+   
+   .first_part {
+      width: 70% !important;
+   }
+
+   .movie img {
+      width: 140px !important;
+      height: 200px !important;
+   }
+   
+ }
+
+@media (max-width: 631px) { .movie img {
+   width: 105px !important;
+   height:175px !important;
+ } }
+
+@media only screen and (max-width: 536px) {
+
+   .boxes {
+      text-align: center;
+      margin:0px auto !important;
+   }
+
+ }
+
+@media only screen and (max-width: 400px) {
+   
+   .navegation > a {
+      font-size: 12px !important;
+   }
+
+   #pesq {
+      font-size: 12px;
+   }
+
+
+   .movie img {
+      width: 140px !important;
+      height: 200px !important;
+   }
+   #movie4 { display: none;  } 
+}
+
+/* Responsividade Fim */

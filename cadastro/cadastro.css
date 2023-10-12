@@ -1,0 +1,179 @@
+
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1920px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.527) 100%,rgba(247, 247, 247, 0)) , url('https://images3.alphacoders.com/131/1318066.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+.box {
+    display: flex;
+}
+
+.first-block {
+    width: 30%;
+    background-color: #020203;
+    text-align: center;
+    padding-top: 300px;
+    
+} 
+
+.first-block h1 {
+    color: #01eaa8;
+    font-size: 150px;
+    height: 170px;
+    width: 160px;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 500px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.watching {
+    width: 350px;
+}
+
+.second-block {
+    width: 100%;
+}
+
+.content {
+    display: block;
+    background-color: rgba(31, 31, 31, 0.864);
+    width: 750px;
+    height: 800px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1 {
+    display: inline-block;
+    color: #EDEDED;
+    font-size: 40px;
+    margin: 40px;
+}
+
+.data {
+    background-color: #EDEDED;
+    color: #111111;
+    width: 50%;
+    height: 55px;
+    margin: 30px 0px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px;
+    font-weight: bolder;
+}
+
+.data:focus {
+    border-width: 2px;
+    border-color: rgb(248, 5, 248);
+    border-style: solid;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+#send {
+    width: 20%;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #ffffff;
+    color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+#send:hover {
+    background-color: black;
+    color: rgb(110, 249, 159);
+    box-shadow: 2px 2px 10px 1px rgb(2, 255, 27);
+    scale: 1.05;
+}
+
+.cadastrado {
+    font-size: 22px;
+    color: rgb(0, 255, 0);
+}
+
+.sameuser {
+    margin-top: 10px;
+    font-size: 17px;
+    color: red;
+}
+
+.pwerror {
+    margin-top: 10px;
+    font-size: 17px;
+    color: red;
+}
+
+.termo{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: #EDEDED;
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 1170px){
+    .content {
+        width: 700px;
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .content {
+        width: 600px;
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 818px){
+    .first-block{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:620px){
+    .content {
+        width: 500px;
+        transition: 1s;
+    }
+}
+
+h3 {
+    margin-top: 60px;
+    color: white;
+    font-weight: lighter;
+}
+
+h3 a {
+    color: #01eaa8;
+}

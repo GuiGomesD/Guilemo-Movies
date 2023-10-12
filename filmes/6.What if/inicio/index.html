@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/filmes/css/series.css">
+        <link rel="shortcut icon" href="/imagens/logo.png" type="image/x-icon">
+        <script src="/Página Inicial/inicio.js"></script>
+        <title>What If...?</title>
+    </head>
+    <body>
+      
+      <header class="cabecalho">
+        <div class="first_part">
+          <div class="logo">
+            <a href="/Página Inicial/index.html">
+                <h1>Guilemo</h1>
+            </a>
+          </div>
+          <span class="navegation">
+             <a href="#">Lançamentos</a>
+            <a href="#">Populares</a>
+            <a href="#">Em Alta</a>
+            <a href="#">Séries</a>
+          </span>
+        </div>
+    
+        <div class="second_part">
+          <input type="search" name="pesq" id="pesq" placeholder="Pesquisar filmes">
+          <a href="#"><img class="lupapesq" src="data:image/png;base64,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" alt=""></a>
+          <div class="pesq_login">
+            <img class="lupa" onclick="pesqopen()" src="data:image/png;base64,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" alt="">
+            <div class="toggle">
+              <label class="switch switch200">
+                <input type="checkbox" onclick="toggle()">
+                <span class="slider slider200"></span>
+              </label>
+          </div>
+          <div class="login">
+            <a href="/login/login.html">Login</a>
+          </div>
+        </div>
+    
+      </header>
+    
+      <main>
+        <section class="info">
+
+            <div class="poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGYwYTA5M2QtMTk3Zi00ZjdjLWFkNDUtYzg4MjM0ZGI0MGU1XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_.jpg" alt="What if poster">
+            </div>
+
+            <div class="content">
+                <div class="episodios" class="episode-1">
+                  <label>33:46 min</label>
+                  <img src="https://cdn.mos.cms.futurecdn.net/eXEEjDz9TMjwexbHryYEbR.jpg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 1</h1>
+                    O Que Aconteceria Se... A Capitã Carter Fosse A Primeira Vingadora?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-2">
+                  <label>34:49 min</label>
+                  <img src="https://assets-prd.ignimgs.com/2021/08/02/marvel-what-if-tchalla-chadwick-boseman-1627944482574.jpg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 2</h1>
+                    O Que Aconteceria Se... O T'Challa Fosse o Senhor das Estrelas?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-3">
+                  <label>30:23 min</label>
+                  <img src="https://www.denofgeek.com/wp-content/uploads/2021/08/103_CDA0110_comp_v004.1151.jpg?fit=1500%2C682" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 3</h1>
+                    O Que Aconteceria Se... O Mundo Perdesse Seus Heróis Mais Poderosos?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-4">
+                  <label>34:38 min</label>
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/marvels-what-if-doctor-strange-5-1630485872.jpg?crop=0.808xw:1.00xh;0.0164xw,0&resize=1200:*" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 4</h1>
+                    O Que Aconteceria Se... O Doutor Estranho Perdesse seu Coração
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-5">
+                  <label>29:58 min</label>
+                  <img src="https://hips.hearstapps.com/hmg-prod/images/screen-shot-2021-09-08-at-10-59-25-am-1631113329.png?crop=0.9266903914590747xw:1xh;center,top&resize=1200:*" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 5</h1>
+                    O Que Aconteceria Se... Zumbis?!
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-6">
+                  <label>31:02 min</label>
+                  <img src="https://images.squarespace-cdn.com/content/v1/5816af52e6f2e15be207b0cd/1631702260217-IXZ5230H4N5WIDY10GAL/What-If-Episode-6-Preview-Teases-What-the-Episodes-About.jpeg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 6</h1>
+                    O Que Aconteceria Se... Killmonger Tivesse Resgatado Tony Stark?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-7">
+                  <label>32:53 min</label>
+                  <img src="https://poltronanerd.com.br/wp-content/uploads/2021/09/poltrona-what-if-episodio-7.jpg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 7</h1>
+                    O Que Aconteceria Se... Thor Fosse Filho Único?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-8">
+                  <label>28:23 min</label>
+                  <img src="https://assets-prd.ignimgs.com/2021/09/29/what-if-ep-8-1632941356482.jpeg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 8</h1>
+                    O Que Aconteceria Se... Ultron Tivesse Vencido?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="episodios" class="episode-9">
+                  <label>28:23 min</label>
+                  <img src="https://loudandclearreviews.com/wp-content/uploads/2021/10/whatif-9-post-cover.jpg" alt="">
+                  <div class="titulo">
+                    <h1>Episódio 9</h1>
+                    O Que Aconteceria Se... O Vigia Quebrasse Seu Juramento?
+                    <div class="options">
+                      <a href="#"><button>Dublado</button></a>
+                      <a href="#"><button>Legendado</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+
+      </main>
+</body>
+</html>

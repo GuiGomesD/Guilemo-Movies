@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+   background-color: rgb(13, 13, 13);
+   margin:0 ;
+   font-family: arial;
+}
+
+@media only screen and (max-width: 400px) {
+   .logo h1 {
+      font-size: 19px !important;
+   }
+
+   .navegation > a {
+      font-size: 12px !important;
+   }
+
+   #pesq {
+      font-size: 12px;
+   }
+ }
+
+ @media only screen and (max-width: 687px) {
+   
+   .first_part {
+      width: 70% !important;
+   }
+   
+ }
+
+ @media (max-width: 990px) {
+   
+   .pesq_login {
+      float: left;
+   }
+
+   #pesq {
+      display: none;
+   }
+   .lupapesq {
+      display: none;
+   }
+   
+   .lupa {
+      width: 5px !important;
+      height: 5px !important;
+      visibility: visible !important;
+      margin-right: 10px;
+   }
+ }
+
+ @media (max-width: 775px) { 
+     #movie5 { display: none;  }
+
+     .navegation {
+      display: none !important;
+     }
+   }
+
+ .cabecalho {
+   display: flex;
+   background-color:#020203;
+   align-items: center;
+   width: 100%;
+   padding-bottom: 15px;
+}
+
+.first_part {
+   
+   display: flex;
+   width: 500px;
+   align-items: center;
+   margin-left: 10%;
+}
+
+.logo h1 {
+   display: inline-block;
+   color: #01eaa8;
+   font-size: 30px;
+   font-family: 'Gothic A1', sans-serif;
+   margin-left: 4%;
+}
+
+.navegation {
+   display: flex;
+   min-width: 395px;
+   margin-left: 2%;
+
+}
+
+.navegation > a {
+   color: rgb(163, 163, 163);
+   text-decoration: none;
+   font-family: 'Gothic A1', sans-serif;
+   font-weight:lighter;
+   font-size: 17px;
+   margin-left: 15px;
+}
+
+.navegation > a:hover {
+   color: white;
+   
+}
+
+.second_part {
+   display: flex;
+   width: 55%;
+}
+
+.lupa {
+   width: 29px !important;
+   height: 29px !important;
+   visibility: hidden;
+}
+
+.lupapesq {
+   margin-left: -30px;
+   width: 20px;
+   height: 20px;
+}
+
+.second_part img:hover {
+   transform: scale(1.1);
+}
+
+.login {
+   margin-top: 5px;
+   margin-left: 5%;
+}
+
+.pesq_login {
+   display: flex;
+}
+
+#pesq{
+   width: 60%;
+   height: 35px;
+   border: none;
+   background: none;
+   border-bottom: 1px solid;
+   border-color: #a4a2a2c2;
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+}
+
+#pesq:focus {
+   outline: none;
+}
+
+.texto h1 {
+   display: inline-block;
+   color: white;
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 40px;
+}
+
+.light-mode {
+   transition: 1s;
+   background-color: white;
+}
+
+.light-mode-boxes > section:hover{
+   background-color: rgb(202, 202, 202);
+   
+}
+
+/* Toggle Início */
+
+.toggle {
+   margin-top: -19px;
+}
+
+.switch input
+{
+  display: none;
+}
+
+.switch 
+{
+  display: inline-block;
+  width: 60px; /*=w*/
+  height: 30px; /*=h*/
+  margin: 4px;
+  transform: translateY(50%);
+  position: relative;
+}
+
+.slider
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  border-radius: 30px;
+  transform: translateX(-30px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px); /*translateX(w-h)*/
+}
+
+.switch200 .slider:before
+{
+  width: 200%;
+  transform: translateX(-82px); /*translateX(-(w-h))*/
+}
+
+.switch200 input:checked + .slider:before
+{
+  background-color: #ffffff;
+}
+
+.switch200 input:checked + .slider
+{
+  box-shadow: 0 0 0 2px #ffff, 0 0 8px #ffff;
+}
+
+/* Toggle Fim */
+
+.login a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+
+
+.info {
+    display: flex;
+    margin: 50px;
+}
+
+.poster img {
+   width: 400px;
+}
+
+
+.content img {
+   width: 380px;
+   height: 200px;
+   margin-bottom: -100px;
+   border-radius: 15px;
+}
+
+.episodios label {
+   color: white;
+   position: relative;
+   top: 95px;
+   left: 380px;
+
+}
+
+.episodios {
+   color: #080C16;
+   transition: 0.5s;
+}
+
+.titulo h1 {
+   font-size: 23px;
+}
+
+.titulo {
+   color: white;
+   position: relative;
+   font-family: 'Gothic A1', sans-serif;
+   font-size: 18px;
+   top: -100px;
+   left: 470px;
+}
+
+.options {
+   margin: 20px 10px;
+}
+
+.options button{
+   background-color: #080C16;
+   color: white;
+   padding: 10px 20px;
+   margin-left: 10px;
+   border-radius: 5px;
+   border-style: solid;
+   border-color: white;
+   transition: 0.3s;
+}
+
+.options button:hover {
+   background-color: white;
+   color: #080C16;
+}
+
+
+/*Sinopse Fim*/
+
+
+.rodape {
+   background-color: #181818;
+   height: 500px;
+}
+
+/*Responsividade Conteudo Inicio*/
+
+@media only screen and (max-width: 1549px) {
+   .info {
+      margin-left: 0.2%;
+   }
+
+   .content {
+      margin-left: -70px;
+   }
+   
+}
+
+@media only screen and (max-width: 1430px) {
+   .titulo {
+      width: 500px;
+   }
+}
+
+@media only screen and (max-width: 1325px) {
+   .titulo {
+      width: 400px;
+   }
+}
+
+@media only screen and (max-width: 1221px) {
+   
+   .poster {
+      margin: 20px 20px;
+   }
+
+   .info {
+      flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 825px) {
+
+   .poster {
+      margin: 0 auto;
+   }
+
+   .poster img {
+      width: 300px;
+   }
+
+   .content {
+      position: relative;
+      margin: 0 auto;
+      left: -38px;
+   }
+
+   .content img {
+      margin-top: 50px;
+      margin-bottom: 20px;
+
+   }
+
+   .titulo {
+      top: -40px;
+      left: 68px;
+      text-align: center;
+   }
+
+   .info {
+      margin: 50px 0px;
+   }
+
+   .episodios label {
+      position: relative;
+      top: -25px;
+   }
+}
+
+/*Responsividade Conteudo Fim*/
